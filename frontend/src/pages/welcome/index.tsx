@@ -1,5 +1,18 @@
-import styles from './styles.module.scss';
+import { Advantages } from './advantages';
+import { Beta } from './beta';
+import { Intro } from './intro';
+
+import { Footer } from '@/modules/footer';
+import { Header } from '@/modules/header';
 
 export const Welcome = () => {
-	return <div className={styles.wrapper}>123</div>;
+	return (
+		<>
+			<Header main />
+			<Intro />
+			<Advantages />
+			<Beta />
+			<Footer />
+		</>
+	);
 };

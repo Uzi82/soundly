@@ -1,0 +1,19 @@
+.mainText {
+    @apply z-10 text-white relative text-inheritSize text-nowrap;
+}
+
+.bgText {
+    @apply absolute -z-10 text-purple duration-200 top-0 text-inheritSize text-nowrap;
+}
+
+.focused {
+    @apply left-c5 opacity-20;
+}
+
+.unfocused {
+    @apply left-c3;
+}
+
+.size16 {
+    @apply text-base;
+}

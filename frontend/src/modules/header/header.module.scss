@@ -1,0 +1,26 @@
+.content {
+    @apply w-full h-c45 flex items-center justify-center bg-bg absolute;
+}
+
+.container {
+    @apply max-w-wrapper flex justify-between px-c5;
+    @media (min-width: 1281px) {
+        @apply w-screen;
+    }
+}
+
+.btns {
+    @apply flex gap-10;
+}
+
+.navigation {
+    @apply flex gap-c30;
+}
+
+.links {
+    @apply flex gap-c30;
+}
+
+.line {
+    @apply w-c3 h-7 rounded-3xl bg-white;
+}

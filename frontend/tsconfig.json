@@ -28,7 +28,9 @@
 		".next/types/**/*.ts",
 		"declarations.d.ts",
 		"src/config/component-sizes.type.ts", 
-		"eslint.config.js"	
-, "postcss.config.cjs", "tailwind.config.js"	],
+		"eslint.config.js", 
+		"postcss.config.cjs",
+		"tailwind.config.js"
+	],
 	"exclude": ["node_modules"]
 }

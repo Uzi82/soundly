@@ -1,0 +1,14 @@
+.ico {
+    @apply relative z-30 animate-appear;
+    &-under {
+        @apply absolute -z-10 left-c3 top-c3;
+    }
+    &-gaus1 {
+        filter: blur(100px);
+        @apply absolute -z-20 top-0 left-0;
+    }
+    &-gaus2 {
+        filter: blur(20px);
+        @apply absolute -z-20 top-0 left-0;
+    }
+}

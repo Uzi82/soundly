@@ -8,12 +8,26 @@
 	border: 0;
 }
 
+@font-face {
+	font-family: T-bold;
+	src: url(./fonts/TitilliumWeb-Bold.ttf);
+}
+@font-face {
+	font-family: T-regular;
+	src: url(./fonts/TitilliumWeb-Regular.ttf);
+}
+@font-face {
+	font-family: T-light;
+	src: url(./fonts/TitilliumWeb-Light.ttf);
+}
+
 *,
 *:before,
 *:after {
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
+	font-family: T-regular, sans-serif;
 }
 
 :focus,
@@ -75,8 +89,9 @@ h3,
 h4,
 h5,
 h6 {
+	font-family: T-bold, sans-serif;
 	font-size: inherit;
-	font-weight: 400;
+	font-weight: 510;
 }
 
 

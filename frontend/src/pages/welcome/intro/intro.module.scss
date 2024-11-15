@@ -1,0 +1,24 @@
+.container {
+    @apply w-full h-screen bg-bg-dark flex justify-center items-center;
+}
+
+.content {
+    @apply max-w-wrapper flex justify-between px-5 items-center;
+    @media (min-width: 1281px) {
+        @apply w-wrapper;
+    }
+}
+
+.text {
+    @apply text-7xl relative z-50 animate-appear;
+    &-above {
+        @apply text-white;
+    }
+    &-under {
+        @apply absolute text-purple top-c6 -z-10;
+    }
+    &-gaus {
+        filter: blur(15px);
+        @apply absolute text-purple -z-20 top-c3;
+    }
+}
