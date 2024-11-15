@@ -6,11 +6,15 @@ import { HeaderText } from '@/components/headerText';
 import { ShiningIco } from '@/components/shiningIco';
 
 export const Beta = () => {
+	const screenWidth = document.documentElement.clientWidth;
 	return (
 		<div className={styles.container} id="beta">
 			<div className={styles.content}>
 				<div className={styles.text}>
-					<HeaderText size="64px" btn={false} weight="300">
+					<HeaderText
+						size={screenWidth > 1120 ? '64px' : '40px'}
+						btn={false}
+						weight="300">
 						BETA версия
 					</HeaderText>
 					<p className={styles['text-p']}>
@@ -20,7 +24,11 @@ export const Beta = () => {
 						можете написать их в службу поддержки. Спасибо, что вы с нами!
 					</p>
 				</div>
-				<ShiningIco Icon={Cuvette} size={350} stroke={1} />
+				<ShiningIco
+					Icon={Cuvette}
+					size={screenWidth > 767 ? 400 : 200}
+					stroke={1}
+				/>
 			</div>
 		</div>
 	);

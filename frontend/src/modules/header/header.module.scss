@@ -3,7 +3,7 @@
 }
 
 .container {
-    @apply max-w-wrapper flex justify-between px-c5;
+    @apply w-full flex justify-between px-10;
     @media (min-width: 1281px) {
         @apply w-screen;
     }
