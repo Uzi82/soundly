@@ -6,12 +6,22 @@ import { HeaderText } from '@/components/headerText';
 import { ShiningIco } from '@/components/shiningIco';
 
 export const Advantages = () => {
+	const screenWidth = document.documentElement.clientWidth;
 	return (
 		<div className={styles.container} id="advantages">
 			<div className={styles.content}>
-				<ShiningIco Icon={PlayOne} size={400} stroke={1} />
+				<ShiningIco
+					Icon={PlayOne}
+					size={screenWidth > 767 ? 400 : 200}
+					stroke={1}
+				/>
 				<div className={styles.text}>
-					<HeaderText size="48px" btn={false} weight="300">
+					<HeaderText
+						size={
+							screenWidth > 1120 ? '64px' : screenWidth > 767 ? '40px' : '32px'
+						}
+						btn={false}
+						weight="300">
 						Никаких ограничений!
 					</HeaderText>
 					<p className={styles['text-p']}>

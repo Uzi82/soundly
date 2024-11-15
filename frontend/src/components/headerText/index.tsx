@@ -1,5 +1,6 @@
 import { clsx } from 'clsx';
 import { ReactNode, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import styles from './headerText.module.scss';
 
@@ -8,6 +9,7 @@ export const HeaderText = ({
 	size = '16px',
 	btn = true,
 	a = false,
+	isLink = false,
 	href = '/',
 	weight = '525px',
 }: {
@@ -15,6 +17,7 @@ export const HeaderText = ({
 	size?: string;
 	btn?: boolean;
 	a?: boolean;
+	isLink?: boolean;
 	href?: string;
 	weight?: string;
 }) => {
@@ -57,6 +60,17 @@ export const HeaderText = ({
 					}}>
 					{content}
 				</a>
+			) : isLink ? (
+				<Link
+					className={styles.container}
+					to={href}
+					onMouseEnter={focus}
+					onMouseLeave={unfocus}
+					style={{
+						fontSize: size,
+					}}>
+					{content}
+				</Link>
 			) : (
 				<div
 					className={styles.container}

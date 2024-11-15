@@ -3,9 +3,12 @@
 }
 
 .content {
-    @apply max-w-wrapper flex justify-between px-5 items-center;
+    @apply w-full flex justify-between px-10 items-center;
     @media (min-width: 1281px) {
         @apply w-wrapper;
+    }
+    @media (max-width: 767px) {
+        @apply flex-col h-1/2;
     }
 }
 
@@ -20,5 +23,11 @@
     &-gaus {
         filter: blur(15px);
         @apply absolute text-purple -z-20 top-c3;
+    }
+    @media (max-width: 1120px) {
+        @apply text-5xl;
+    }
+    @media (max-width: 767px) {
+        @apply text-3xl;
     }
 }
