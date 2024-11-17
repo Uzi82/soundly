@@ -1,4 +1,7 @@
 .mainText {
+	font-family: T-bold, sans-serif;
+	font-size: inherit;
+	font-weight: 510;
     @apply z-10 text-white relative text-inheritSize text-nowrap;
 }
 

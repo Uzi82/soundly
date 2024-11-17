@@ -27,14 +27,14 @@ export const Header = ({ main = false }: { main?: boolean }) => {
 						<HeaderText
 							isLink
 							btn={false}
-							href="/registration"
+							href="/sign/registration"
 							size={screenWidth > 767 ? '20px' : '14px'}>
 							Зарегистрироваться
 						</HeaderText>
 						<HeaderText
 							isLink
 							btn={false}
-							href="/login"
+							href="/sign/login"
 							size={screenWidth > 767 ? '20px' : '14px'}>
 							Войти
 						</HeaderText>
