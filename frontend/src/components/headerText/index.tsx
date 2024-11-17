@@ -25,7 +25,7 @@ export const HeaderText = ({
 	const focus = () => setFocused(true);
 	const unfocus = () => setFocused(false);
 	const content = (
-		<h1 className={styles.mainText} style={{ fontWeight: weight }}>
+		<div className={styles.mainText} style={{ fontWeight: weight }}>
 			{children}
 			<h1
 				className={clsx(
@@ -35,7 +35,7 @@ export const HeaderText = ({
 				style={{ fontWeight: weight }}>
 				{children}
 			</h1>
-		</h1>
+		</div>
 	);
 	return (
 		<div>

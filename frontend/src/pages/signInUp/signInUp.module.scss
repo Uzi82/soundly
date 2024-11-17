@@ -1,0 +1,89 @@
+.contrainer {
+    @apply bg-bg-dark w-full h-svh z-40 absolute;
+}
+
+.content {
+    box-shadow: 0px 0px 200px 100px rgba(88, 101, 242, 0.1);
+    @apply w-c400 py-5 px-5 flex flex-col absolute bg-bg rounded-3xl animate-appear z-50;
+    &-under {
+        filter: blur(200px);
+        @apply w-96 absolute pt-5 animate-halfAppear opacity-50 bg-purple z-40;
+    }
+}
+
+.centred {
+    @apply left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2;
+}
+
+.header {
+    @apply flex justify-center items-center w-full;
+}
+
+.form {
+    @apply w-full flex flex-col gap-c5 items-center mt-5;
+    &-loginForm {
+        @apply mt-10 gap-5;
+    }
+    &-el {
+        @apply w-full flex flex-col gap-c5;
+    }
+    &-label {
+        @apply font-bold text-lg ml-5 text-white;
+    }
+    &-input {
+        @apply bg-bg-dark text-bg rounded-xl duration-200 h-12 w-full text-base px-3 box-border;
+        &::placeholder {
+            @apply text-base text-bg;
+        }
+        &:focus {
+            @apply text-purple;
+            &::placeholder {
+                @apply text-purple opacity-50;
+            }
+        }
+    }
+    &-error {
+        @apply text-red-600;
+        &::placeholder {
+            @apply text-red-600;
+        }
+        &:focus {
+            @apply text-red-600;
+            &::placeholder {
+                @apply text-red-600 opacity-50;
+            }
+        }
+    }
+    &-submit {
+        background-color: rgb(88,101,242);
+        background-size: 200% !important;
+        background: linear-gradient(30deg, rgba(88,101,242,0.25) 0%, rgba(88,101,242,1) 50%, rgba(88,101,242,1) 100%); 
+        @apply w-5/6 h-c45 rounded-lg duration-200 text-white text-2xl tracking-c3 mt-5;
+        &-loginForm {
+            @apply mt-10;
+        }
+        &:hover {
+            @apply tracking-c5;
+            animation: gradient 250ms linear;
+            background-size: 200%;
+            background-position: 40% 0;
+        }
+    }
+}
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 10% 0;
+    }
+    100% {
+        background-position: 40% 0;
+    }
+}
+
+.redir {
+    @apply font-regular text-purple underline absolute left-1/2 -translate-x-1/2 top-full -translate-y-full pb-5;
+}
